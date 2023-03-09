@@ -1,0 +1,1 @@
+var first = "This should be first commit of me ey!";
