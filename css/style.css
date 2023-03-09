@@ -92,20 +92,29 @@ body {
 /* ----------- Drop down navigation begin ----------- */
 
 #drop-down-nav {
-    height: 15.625rem;
-    font-size: 0.95rem;
-    width: 100%;
-    left: 0;
-    right: 0;
-    position: absolute;
     background-color: #494949;
+    height: 0;
+    width: 100%;
+    display: flex;
+    font-size: 0.95rem;
+    position: absolute;
+    left: 0;
     top: 3.5rem;
-    display: none;
+    right: 0;
     padding: 0 8%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-1rem);
+    transition: all 0.3s;
 }
 
-#nav a:hover #drop-down-nav {
-    display: flex;
+#drop-down-nav.active {
+    height: 15.625rem;
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
 }
 
 #drop-down-image > img {
@@ -272,16 +281,28 @@ body {
     font-size: 0.6rem;
 }
 
+
 .user-drop-down {
     position: absolute;
     width: 15rem;
-    background-color: #000;
     top: 3.5rem;
     right: 8%;
     background-color: #2b2d2f;
     color: #fff;
-    display: none;
+    display: flex;
     flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transform: translateY(-1rem);
+    transition: all 0.3s;
+}
+
+.user-drop-down.active {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transform: translateY(0);
 }
 
 .user-drop-down > div {

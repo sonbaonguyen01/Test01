@@ -13,29 +13,32 @@
     <div id="header">
         <ul id="nav">
             <li id="home-nav">
-                <a href="#"><img src="img/home-icon.png" alt=""></a>
+                <a href="#/"><img src="img/home-icon.png" alt=""></a>
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">
+            <a class="active-drop-down-btn"  href="#/">
                 <i class="ti-home home-icon"></i>
                 <span class="text-non-wrap">Skyrim Special Edition </span>
                 <i class="ti-angle-down"></i></a>
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">Mods <i class="ti-angle-down"></i>
-            </a>                
+                
+            <a class="active-drop-down-btn"
+                href="#/">Mods <i class="ti-angle-down"></i>
+            </a>
+
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">Collections <i class="ti-angle-down"></i></a>                
+            <a class="active-drop-down-btn"  href="#/">Collections <i class="ti-angle-down"></i></a>                
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">Media <i class="ti-angle-down"></i></a>                
+            <a class="active-drop-down-btn"  href="#/">Media <i class="ti-angle-down"></i></a>                
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">Community <i class="ti-angle-down"></i></a>                
+            <a class="active-drop-down-btn"  href="#/">Community <i class="ti-angle-down"></i></a>                
             </li>
             <li>
-            <a class="" onclick="toggleDropDown()" href="#">Support <i class="ti-angle-down"></i></a>                
+            <a class="active-drop-down-btn"  href="#/">Support <i class="ti-angle-down"></i></a>                
             </li>
 
             <!-- Drop down navigation -->
@@ -48,28 +51,28 @@
                         <div class="m-sidebar-header" class="text-white">
                             <div><i class="ti-home"></i></div>
                             <div>Skyrim Special Edition</div>
-                            <div onclick="toggleDropDown()"><i class="ti-close"></i></div>
+                            <div class="active-drop-down-btn" ><i class="ti-close"></i></div>
                         </div>
                         <ul class="nav-col">
-                            <li><a href="#">Browse all</a>
+                            <li><a href="#/">Browse all</a>
                             <i class="ti-angle-right"></i></li>
-                            <li><a href="#">New</a></li>
-                            <li><a href="#">Trending</a></li>
-                            <li><a href="#">Most endorsed</a></li>
-                            <li><a href="#">Top files</a></li>
-                            <li><a href="#">Mod categories</a></li>
+                            <li><a href="#/">New</a></li>
+                            <li><a href="#/">Trending</a></li>
+                            <li><a href="#/">Most endorsed</a></li>
+                            <li><a href="#/">Top files</a></li>
+                            <li><a href="#/">Mod categories</a></li>
                         </ul>
                         <ul class="nav-col">
-                            <li><a href="#">mod updates</a>
+                            <li><a href="#/">mod updates</a>
                             <i class="ti-angle-right"></i></li>
-                            <li><a href="#">Recent activity</a></li>
-                            <li><a href="#">Tracked mods</a></li>
+                            <li><a href="#/">Recent activity</a></li>
+                            <li><a href="#/">Tracked mods</a></li>
                         </ul>
                         <ul class="nav-col">
-                            <li><a href="#">My mods</a>
+                            <li><a href="#/">My mods</a>
                             <i class="ti-angle-right"></i></li>
-                            <li><a href="#">Mod rewards</a></li>
-                            <li><a href="#">Download history</a></li>
+                            <li><a href="#/">Mod rewards</a></li>
+                            <li><a href="#/">Download history</a></li>
                         </ul>
                     </div>
                     <div class="drop-down-ads">
@@ -80,7 +83,7 @@
                             Explore this month's nominated mods
                         </p>
                         <p class="drop-ads-link">
-                            <a class="text-non-deco text-main-color" href="#">Discover</a>
+                            <a class="text-non-deco text-main-color" href="#/">Discover</a>
                             <i class="ti-angle-right text-main-color"></i>
                         </p>
                     </div>
@@ -92,7 +95,7 @@
                             The elegant, powerful, and open-source mod manager
                         </p>
                         <p class="drop-ads-link">
-                            <a class="text-non-deco text-main-color" href="#">Donwload</a>
+                            <a class="text-non-deco text-main-color" href="#/">Donwload</a>
                             <i class="ti-angle-right text-main-color"></i>
                         </p>
                     </div>
@@ -106,27 +109,27 @@
                         <i class="ti-search"></i>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#/">
                             Upload <i class="ti-angle-down"></i>
                         </a>
                         <i class="ti-upload d-hidden"></i>
                     </li>
-                    <li><a href="#"><i class="ti-bell"></i></a></li>
-                    <li><a href="#"><i class="ti-email"></i></a></li>
-                    <li><a onclick="toggleUserDropDown()" href="#"><i class="ti-user"></i></a></li>
+                    <li><a href="#/"><i class="ti-bell"></i></a></li>
+                    <li><a href="#/"><i class="ti-email"></i></a></li>
+                    <li><a class="active-user-btn"  href="#/"><i class="ti-user"></i></a></li>
                 </ul>
             </li>
             <!-- Responsive elements -->
             <div id="m-btn-group">
-                <div id="m-menu-btn" onclick="toggleDropDown()">
+                <div id="m-menu-btn" class="active-drop-down-btn" >
                     <i class="ti-menu"></i>
                 </div>
                 <div id="m-home-btn">
-                    <a href="#"><img src="img/home-icon.png" alt=""></a>
+                    <a href="#/"><img src="img/home-icon.png" alt=""></a>
                 </div>
                 <div id="m-profile-group">
-                    <div onclick="toggleSearchSidebar()"><i class="ti-search"></i></div>
-                    <div onclick="toggleUserDropDown()"><i class="ti-user"></i></div>
+                    <div class="active-search-sidebar"><i class="ti-search"></i></div>
+                    <div class="active-user-btn" ><i class="ti-user"></i></div>
                 </div>
             </div>
 
@@ -135,7 +138,7 @@
                     <div class="m-sidebar-header" class="text-white">
                         <div></div>
                         <div><i class="ti-game mr-1"></i> Skyrim Special Edition</div>
-                        <div onclick="toggleSearchSidebar()"><i class="ti-close"></i></div>
+                        <div class="active-search-sidebar"><i class="ti-close"></i></div>
                     </div>
                     <div id="m-search-field">
                         <input type="text" placeholder="Search">
@@ -152,7 +155,9 @@
                     <div>
                         <i class="ti-bell"></i>
                         <i class="ti-email"></i>
-                        <i onclick="toggleUserDropDown()" class="ti-close"></i>
+                        <i class="active-user-btn ti-close"
+                        >
+                    </i>
                     </div>
                 </div>
                 <div onclick="">
@@ -194,9 +199,9 @@
     <div id="content">
         <div class="content-header">
             <ul class="content-breadcrumb">
-                <li><a href="#">All games</a></li>
-                <li><a href="#">Skyrim Special Edition</a></li>
-                <li><a href="#">Mods</a></li>
+                <li><a href="#/">All games</a></li>
+                <li><a href="#/">Skyrim Special Edition</a></li>
+                <li><a href="#/">Mods</a></li>
             </ul>
             <div class="content-ads-field text-white">
                 <div class="content-ads-txt">
@@ -212,8 +217,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -225,8 +230,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -238,8 +243,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -251,8 +256,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -264,8 +269,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -277,8 +282,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -290,8 +295,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -303,8 +308,8 @@
             <div class="content-item">
                 <img src="https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86507/86507-1678177348-2044849988.png" alt="">
                 <div class="item-body">
-                    <a href="#" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
-                    <a href="#" class="item-type">Models and Textures</a>
+                    <a href="#/" class="item-title">Gemstones Remade - Legacy of The Dragonborn</a>
+                    <a href="#/" class="item-type">Models and Textures</a>
                     <p class="item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, voluptates.</p>
                 </div>
                 <div class="item-footer">
@@ -319,16 +324,16 @@
         <div id="footer-more">
             <div>
                 <span>more services</span>
-                <a href="#">go premium</a>
+                <a href="#/">go premium</a>
             </div>
             <div>
                 <span>Follow us on</span>
                 <div id="footer-more-icons">
-                    <a href="#"><i class="ti-twitter"></i></a>
-                    <a href="#"><i class="ti-facebook"></i></a>
-                    <a href="#"><i class="ti-youtube"></i></a>
-                    <a href="#"><i class="ti-instagram"></i></a>
-                    <a href="#"><i class="ti-reddit"></i></a>
+                    <a href="#/"><i class="ti-twitter"></i></a>
+                    <a href="#/"><i class="ti-facebook"></i></a>
+                    <a href="#/"><i class="ti-youtube"></i></a>
+                    <a href="#/"><i class="ti-instagram"></i></a>
+                    <a href="#/"><i class="ti-reddit"></i></a>
                 </div>
             </div>
         </div>

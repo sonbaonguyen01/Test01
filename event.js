@@ -1,42 +1,41 @@
-
-var dropdown = document.getElementById('drop-down-nav');
-var dropdownStatus = window.getComputedStyle(dropdown).display;
-
-function toggleDropDown () {
-    if (dropdownStatus === 'none') {
-        dropdown.style.display = 'flex';
-        dropdownStatus = dropdown.style.display;
-    }
-    else if (dropdownStatus === 'flex') {
-        dropdown.style.display = 'none';
-        dropdownStatus = dropdown.style.display;
-    }
+const dropdown = document.getElementById('drop-down-nav');
+const activeDropButtons = document.getElementsByClassName('active-drop-down-btn');
+for (let i=0; i<activeDropButtons.length; i++) {
+    activeDropButtons[i].addEventListener('click', function() {
+        dropdown.classList.toggle('active');
+    });
 }
 
-var userDropDown = document.getElementsByClassName('user-drop-down')[0];
-var userDropdownStatus = window.getComputedStyle(userDropDown).display;
-function toggleUserDropDown() {
-    if (userDropdownStatus === 'none') {
-        userDropDown.style.display = 'flex';
-        userDropdownStatus = userDropDown.style.display;
-    }
-    else if (userDropdownStatus === 'flex') {
-        userDropDown.style.display = 'none';
-        userDropdownStatus = userDropDown.style.display;
-    }
+
+// var userDropDown = document.getElementsByClassName('user-drop-down')[0];
+// var userDropdownStatus = window.getComputedStyle(userDropDown).display;
+// function toggleUserDropDown() {
+//     if (userDropdownStatus === 'none') {
+//         userDropDown.style.display = 'flex';
+//         userDropdownStatus = userDropDown.style.display;
+//     }
+//     else if (userDropdownStatus === 'flex') {
+//         userDropDown.style.display = 'none';
+//         userDropdownStatus = userDropDown.style.display;
+//     }
+// }
+
+const userDropDown = document.getElementsByClassName('user-drop-down')[0];
+const activeUserButtons = document.getElementsByClassName('active-user-btn');
+for (let i=0; i<activeUserButtons.length; i++) {
+    activeUserButtons[i].addEventListener('click', function() {
+        userDropDown.classList.toggle('active');
+    });
 }
+
 
 // Side bars ----------------------
 // Search sidebar
-var searchSidebar = document.getElementById('m-search-sidebar');
-var searchSidebarStatus = window.getComputedStyle(searchSidebar).display;
-function toggleSearchSidebar() {
-    if (searchSidebarStatus === 'none') {
-        searchSidebar.style.display = 'flex';
-        searchSidebarStatus = searchSidebar.style.display;
-    }
-    else if (searchSidebarStatus === 'flex') {
-        searchSidebar.style.display = 'none';
-        searchSidebarStatus = searchSidebar.style.display;
-    }
+const searchSidebar = document.getElementById('m-search-sidebar');
+const activeSearchSidebarButtons = document.getElementsByClassName('active-search-sidebar');
+for (let i=0; i<activeSearchSidebarButtons.length; i++) {
+    activeSearchSidebarButtons[i].addEventListener('click', function() {
+        searchSidebar.classList.toggle('active');
+        console.log("Hey");
+    });
 }
